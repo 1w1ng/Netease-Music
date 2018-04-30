@@ -21,7 +21,7 @@ $(function(){
   })
   // 进入页面开始播放音乐
   let audio = document.createElement('audio')
-  audio.src = '//m10.music.126.net/20180430134639/87a67b9063af5975178bdd009ed5af40/ymusic/5d63/5150/0851/5f226aac018cafc2cb248f7d28fbd5b4.mp3'
+  audio.src = '//p7zhcxqif.bkt.clouddn.com/%E7%83%9F%E7%81%AB%E9%87%8C%E7%9A%84%E5%B0%98%E5%9F%83.mp3'
   audio.oncanplay = function(){
     audio.play()
     $('.disc-container').addClass('playing')
