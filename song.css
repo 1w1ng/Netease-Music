@@ -28,6 +28,18 @@
 .disc-container{
   position: relative;
 }
+.disc-container .icon-wrapper{
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.disc-container .icon{
+  width: 15vw;
+  fill: #fff;
+}
+
 .disc-container .pointer{
   width: 24vw;
   position: absolute;
@@ -56,6 +68,16 @@
   animation: circle 20s infinite linear;
 }
 
+.disc-container .icon-pause{
+  display: none;
+}
+.disc-container.playing .icon-pause{
+  display: block;
+}
+.disc-container.playing .icon-play{
+  display: none;
+}
+
 
 /* 歌词 */
 .song-description{
@@ -75,7 +97,6 @@
 }
 .song-description .lyric{
   height:72px;
-  border:1px solid red;
   overflow: hidden;
 }
 

@@ -21,9 +21,18 @@ $(function(){
   })
   // 进入页面开始播放音乐
   let audio = document.createElement('audio')
-  audio.src = 'http://m10.music.126.net/20180430102933/ff535ecd2b886cc0196b3d76e85a2911/ymusic/7cfe/06af/2e02/2717d9e8ca5a258135c37e23f68cd9c9.mp3'
+  audio.src = '//m10.music.126.net/20180430103820/b8beea1f7ecf191602a211667395556b/ymusic/5d63/5150/0851/5f226aac018cafc2cb248f7d28fbd5b4.mp3'
   audio.oncanplay = function(){
     audio.play()
     $('.disc-container').addClass('playing')
   }
+  // 暂停播放功能
+  $('.icon-pause').on('click',function(){
+    audio.pause()
+    $('.disc-container').removeClass('playing')
+  })
+  $('.icon-play').on('click', function () {
+    audio.play()
+    $('.disc-container').addClass('playing')
+  })
 })
