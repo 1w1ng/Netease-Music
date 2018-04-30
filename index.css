@@ -1,0 +1,60 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::before,*::after{
+  box-sizing: border-box;
+}
+ul,ol{
+  list-style: none;
+}
+body{
+  font-size: 3.7vw;
+}
+
+/* 顶部 */
+.topbar{
+  background: #d43c33;
+  padding: 4.5vw 2.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.topbar .logo{
+  width: 38vw;
+}
+.topbar .downloadApp{
+  line-height: 7.5vw;
+  border: 1px solid #fff;
+  border-radius: 4.25vw;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 0 .8em;
+  font-size: 4vw;
+}
+
+.siteNav{}
+
+.siteNav > ol {
+  display: flex;
+  text-align: center;
+  line-height: 12vw;
+  border-bottom: 1px solid #ccc;
+  font-size: 1.1em;
+}
+.siteNav > ol > li{
+  flex: 1;
+}
+.siteNav > ol > li.active{
+  color: #d43c33;
+}
+.siteNav > ol > li.active > span{
+  position: relative;
+}
+.playlists{}
+
+.lastestMusic{}
+
+section .art{}

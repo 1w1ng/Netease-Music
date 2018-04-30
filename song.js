@@ -21,7 +21,7 @@ $(function(){
   })
   // 进入页面开始播放音乐
   let audio = document.createElement('audio')
-  audio.src = '//p7zhcxqif.bkt.clouddn.com/%E7%83%9F%E7%81%AB%E9%87%8C%E7%9A%84%E5%B0%98%E5%9F%83.mp3'
+  audio.src = '//p7zhcxqif.bkt.clouddn.com/music.mp3'
   audio.oncanplay = function(){
     audio.play()
     $('.disc-container').addClass('playing')
