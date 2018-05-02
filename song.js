@@ -33,6 +33,34 @@ $(function(){
       audio.play()
       $('.disc-container').addClass('playing')
     })
+
+    setInterval(()=>{
+      let seconds = audio.currentTime
+      let mintues = ~~(seconds / 60)
+      let left = seconds - mintues * 60
+      let time = `${pad(mintues)}:${pad(left)}`
+      let $lines = $('.lines > p')
+      let $whichLine
+      for(let i =0;i<$lines.length;i++){
+        let currentLineTime = $lines.eq(i).attr('data-time')
+        let nextLineTime = $lines.eq(i+1).attr('data-time')
+        if($lines.eq(i+1).length !== 0 && currentLineTime < time && nextLineTime >time){
+          $whichLine = $lines.eq(i)
+          break
+        }
+      }
+      if($whichLine){
+        $whichLine.addClass('active').prev().removeClass('active')
+        let top = $whichLine.offset().top
+        let linesTop = $('.lines').offset().top
+        let delta = top - linesTop - $('.lyric').height() / 3
+        $('.lines').css('transform',`translateY(-${delta}px)`)
+      }
+    },500)
+  }
+
+  function pad(number){
+    return number >= 10 ? number + '' : '0' + number
   }
 
   // $.get('/lyric.json').then(function(object){
