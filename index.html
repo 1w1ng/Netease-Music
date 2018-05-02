@@ -56,15 +56,19 @@
   </section>
   <section class="lastestMusic">
     <h2>最新音乐</h2>
-    <ol>
+    <p id="lastestMusicLoading">
+      <img src="./images/loading.gif" alt="">
+    </p>
+    <ol id="lastestMusic"></ol>
+    <!-- <ol>
       <li>
-        <h3>歌曲名1</h3>
-        <p>
-        <svg class="icon sq" aria-hidden="true">
-          <use xlink:href="#icon-sq"></use>
-        </svg>
-        演唱者1-专辑1</p>
-        <a href="#">
+        <a href="./song.html">
+          <h3>歌曲名1</h3>
+          <p>
+          <svg class="icon sq" aria-hidden="true">
+            <use xlink:href="#icon-sq"></use>
+          </svg>
+          演唱者1-专辑1</p>
           <svg class="icon play" aria-hidden="true">
             <use xlink:href="#icon-play"></use>
           </svg>
@@ -151,7 +155,7 @@
           </svg>
         </a>
       </li>
-    </ol>  
+    </ol>   -->
   </section>
   <section class="art">
     <div class="logo">
@@ -165,5 +169,7 @@
     </div>
   </section>
   <script src="//at.alicdn.com/t/font_648610_jc7ph8ukb95p14i.js"></script>
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
