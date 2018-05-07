@@ -126,7 +126,7 @@ $(function () {
       let $p = $('<p></p>')
       $p.attr({ 'class': 'lrc-line' }).text('纯音乐，无歌词').appendTo($lrc).appendTo($lrcWrap)
     } else {
-      $.get(`//owf5g9dnv.bkt.clouddn.com/lrc/${id + 1}.json`).then(function (response) {
+      $.get(`./lrc/${id + 1}.json`).then(function (response) {
         let lyric = response.lrc.lyric
         let tlyric = response.tlyric.lyric
 

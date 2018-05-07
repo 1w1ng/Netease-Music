@@ -16,3 +16,7 @@ ul,ol{
 h1,h2,h3{
   font-weight: normal;
 }
+html,body{
+  font: 20px/1.5 Helvetica,'sans-serif';
+  color:#333;
+}
