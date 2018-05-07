@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/1w1ng/Netease-Music#readme",
   "dependencies": {
-    "jquery": "^3.3.1"
+    "jquery": "^3.3.1",
+    "leancloud-storage": "^3.6.8"
   }
 }

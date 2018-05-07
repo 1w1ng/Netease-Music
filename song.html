@@ -5,10 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>歌曲播放</title>
-  <link rel="stylesheet" href="./song.css">
+  <link rel="stylesheet" href="./css/song.css">
+  <link rel="stylesheet" href="./css/reset.css">
 </head>
 <body>
-  <div class="page">
+  <div id="app">
+    <div class="song-bg"></div>
+    <div class="song-wrap">
+      <div class="needle"></div>
+      <div class="disc-container">
+        <div class="disc">
+          <div class="default-cover">
+            <!-- <img class="cover" src="" alt=""> -->
+          </div>
+          <svg class="pause-btn icon" aria-hidden="true">
+            <use xlink:href="#icon-pause"></use>
+          </svg>
+        </div>
+        <svg class="play-btn icon" aria-hidden="true">
+          <use xlink:href="#icon-play"></use>
+        </svg>
+      </div>
+    </div>
+    <div class="song-info">
+      <!--歌手，专辑-->
+      <div class="lrc-wrap">
+        <!--歌词-->
+      </div>
+    </div>
+    <div class="play-footer">
+      <a href="./download.html" class="open-app-btn">打开</a>
+      <a href="#" class="download-app-btn">下 载</a>
+    </div>
+  </div>
+
+  <!-- <div class="page">
+    <div class="bg"></div>
     <div class="disc-container">
       <img class="pointer" src="//s3.music.126.net/m/s/img/needle-plus.png?994aa910ce3e4d242eb7076620b0e502" alt="">
       <div class="disc">
@@ -35,9 +67,10 @@
       <a href="">打开</a>
       <a class="main" href="">下载</a>
     </div>
-  </div>
+  </div> -->
+
   <script src="//at.alicdn.com/t/font_648610_jc7ph8ukb95p14i.js"></script>
   <script src="./node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="song.js"></script>
+  <script src="./js/song.js"></script>
 </body>
 </html>
