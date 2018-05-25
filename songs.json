@@ -49,26 +49,74 @@
   },
   {
     "id": 4,
-    "songName": "月亮",
-    "songAuthor": "陈慧娴",
-    "album": "归来吧",
+    "songName": "Overflow",
+    "songAuthor": "SMLE/Helen Tess",
+    "album": "Overflow",
     "sq": true,
-    "url": "//p7zhcxqif.bkt.clouddn.com/4.mp3",
+    "url": "//p7zhcxqif.bkt.clouddn.com/four.mp3",
     "hasLrc": true,
     "lrcUrl": "",
-    "coverUrl": "//p1.music.126.net/bnhqhxEi2ROjh0DFUa8OMw==/109951163243073310.jpg?imageView&thumbnail=360y360&quality=75&tostatic=0",
-    "backgroundImgUrl": "//p3.music.126.net/aR6Xm8hU_jJRs-_MtvVsZw==/109951163243077677.jpg"
+    "coverUrl": "//p1.music.126.net/4qVisMlLQpaOnxMxNTSdsw==/18641120139076007.jpg?imageView&thumbnail=360y360&quality=75&tostatic=0",
+    "backgroundImgUrl": "//p4.music.126.net/V6EgNLFZUwW-6SmSMX6REw==/17659256254106945.jpg"
   },
   {
-    "id": 4,
-    "songName": "林宥嘉",
-    "songAuthor": "徐秉龙",
-    "album": "林宥嘉",
+    "id": 5,
+    "songName": "山阴路的夏天 (2016 unplugged)",
+    "songAuthor": "李志/张怡然",
+    "album": "李志北京不插电现场 2016.5.29",
     "sq": true,
-    "url": "//p7zhcxqif.bkt.clouddn.com/4.mp3",
+    "url": "//p7zhcxqif.bkt.clouddn.com/five.mp3",
     "hasLrc": true,
     "lrcUrl": "",
-    "coverUrl": "//p1.music.126.net/bnhqhxEi2ROjh0DFUa8OMw==/109951163243073310.jpg?imageView&thumbnail=360y360&quality=75&tostatic=0",
-    "backgroundImgUrl": "//p3.music.126.net/aR6Xm8hU_jJRs-_MtvVsZw==/109951163243077677.jpg"
+    "coverUrl": "//p1.music.126.net/RN-nvLgMuLujEvbMRUFQvA==/3420580718570196.jpg?imageView&thumbnail=360y360&quality=75&tostatic=0",
+    "backgroundImgUrl": "//p3.music.126.net/0TPckdXTcWx8aSQs58eddg==/109951163295142971.jpg"
+  },
+  {
+    "id": 6,
+    "songName": "Intro",
+    "songAuthor": "The xx",
+    "album": "xx",
+    "sq": true,
+    "url": "//p7zhcxqif.bkt.clouddn.com/6.mp3",
+    "hasLrc": false,
+    "lrcUrl": "",
+    "coverUrl": "//p1.music.126.net/Xik6a3wXoGPOLI1GNXGdFQ==/825733232504415.jpg?imageView&thumbnail=360y360&quality=75&tostatic=0",
+    "backgroundImgUrl": "//p4.music.126.net/H0pqdMSAE23DPrS4aKyhuQ==/18215609137578121.jpg"
+  },
+  {
+    "id": 7,
+    "songName": "Good Vibes",
+    "songAuthor": "PLS&TY/Cosmos & Creature",
+    "album": "Good Vibes",
+    "sq": false,
+    "url": "//p7zhcxqif.bkt.clouddn.com/7.mp3",
+    "hasLrc": true,
+    "lrcUrl": "",
+    "coverUrl": "//p1.music.126.net/xnzXCF4ltaFZ-rGAiCuhTQ==/18802748348380680.jpg?imageView&thumbnail=360y360&quality=75&tostatic=0",
+    "backgroundImgUrl": "//p4.music.126.net/seW5KkUhGMY7uOmfqUyrFA==/18224405230902418.jpg"
+  },
+  {
+    "id": 8,
+    "songName": "All Of Me/Say Something",
+    "songAuthor": "Shaun Reynolds/Lily Me",
+    "album": "All Of Me/Say Something",
+    "sq": false,
+    "url": "//p7zhcxqif.bkt.clouddn.com/8.mp3",
+    "hasLrc": true,
+    "lrcUrl": "",
+    "coverUrl": "//p1.music.126.net/RL1y8v-bc2HA34toySJcSg==/3298534886368918.jpg?imageView&thumbnail=360y360&quality=75&tostatic=0",
+    "backgroundImgUrl": "//p4.music.126.net/s1afkZLAgsu_PoQ7AhcKIQ==/18366242230549081.jpg"
+  },
+  {
+    "id": 9,
+    "songName": "The Nights (Original Mix)",
+    "songAuthor": "Avicii",
+    "album": "The Days / Nights (EP)",
+    "sq": false,
+    "url": "//p7zhcxqif.bkt.clouddn.com/9.mp3",
+    "hasLrc": true,
+    "lrcUrl": "",
+    "coverUrl": "//p1.music.126.net/6FE-03uc2xJJWcE-aKIejw==/3246857838267604.jpg?imageView&thumbnail=360y360&quality=75&tostatic=0",
+    "backgroundImgUrl": "//p3.music.126.net/S-OZz2Z_nCI4chd5n0k9OA==/17806590811901304.jpg"
   }
 ]

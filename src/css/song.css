@@ -156,18 +156,18 @@ body{
 
 .lrc-wrap {
   overflow: hidden;
-  margin-top: 0.7rem;
-  height: 4.6rem;
-  font-size: 0.8rem;
+  margin-top: 1.5rem;
+  height: 4.8rem;
+  font-size: 0.6rem;
 }
 .lrc-wrap .lrc{
   transition: 0.3s;
 }
 
 .lrc-wrap .lrc-line {
-  font-size: 0.8rem;
+  font-size: 0.76rem;
   min-height: 0.95rem;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.4rem;
   color: hsla(0, 0%, 100%, .6);  
 }
 
@@ -177,11 +177,11 @@ body{
 
 .lrc-wrap .lrc-line .origin-lrc-line{
   display: block;
-  line-height: 1.2;
+  line-height: 1.7;
 }
 .lrc-wrap .lrc-line .translate-lrc-line{
   display: block;
-  line-height: 1.5
+  line-height: 1;
 }
 
 .play-footer{

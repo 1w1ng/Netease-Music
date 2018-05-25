@@ -1,5 +1,6 @@
 $(function () {
   let search = window.location.search
+  // 获取url 的id
   let id = Number(search.match(/\?id=(\d+)/)[1])
 
   function initImg(coverUrl, bgUrl) {
@@ -21,16 +22,19 @@ $(function () {
     let i = 0
 
     audio.oncanplay = function () {
+      audio.play()
+      $disc.removeClass('paused').addClass('playing')
+      $needle.addClass('active')
       //使用touchstart首次会触发$pauseBtn事件，还没开始就暂停了，改为click可以
-      $body.one('click', function (e) {
-        if (e.currentTarget === $body[0] && e.target !== $playBtn[0]) {
-          if (i > 0) return
-          e.stopPropagation()
-          audio.play()
-          $disc.removeClass('paused').addClass('playing')
-          $needle.addClass('active')
-        }
-      })
+      // $body.one('click', function (e) {
+      //   if (e.currentTarget === $body[0] && e.target !== $playBtn[0]) {
+      //     if (i > 0) return
+      //     e.stopPropagation()
+      //     audio.play()
+      //     $disc.removeClass('paused').addClass('playing')
+      //     $needle.addClass('active')
+      //   }
+      // })
     }
     audio.onended = function () {
       $disc.addClass('paused').removeClass('playing')
@@ -66,7 +70,6 @@ $(function () {
 
       $lrcLines.each(function (index, ele) {
         if (time > $(ele).attr('data-time') && (time < $lrcLines.eq(index + 1).attr('data-time') || index === lineLength - 1)) {
-          //踩坑了，获取绝对高度位移
           let offset = $lrcLines.eq(index).offset().top - $lrcCt.offset().top
           $lrcCt.css({ 'transform': `translateY(-${offset}px)` })
           $(ele).addClass('active').prev().removeClass('active')
@@ -91,7 +94,6 @@ $(function () {
     let regexp = /\[\d+:\d+\.\d+\]/
 
     //去掉歌词上传者的注释信息
-    //not map
     array = array.filter(function (ele) {
       return !(!regexp.test(ele) || ele == '')
     })
@@ -126,7 +128,7 @@ $(function () {
       let $p = $('<p></p>')
       $p.attr({ 'class': 'lrc-line' }).text('纯音乐，无歌词').appendTo($lrc).appendTo($lrcWrap)
     } else {
-      $.get(`./lrc/${id + 1}.json`).then(function (response) {
+      $.get(`./src/lrc/${id + 1}.json`).then(function (response) {
         let lyric = response.lrc.lyric
         let tlyric = response.tlyric.lyric
 
