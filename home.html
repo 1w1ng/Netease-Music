@@ -118,83 +118,8 @@
     </li>
   </ol>
 
-  <script src="//at.alicdn.com/t/font_648610_jc7ph8ukb95p14i.js"></script>
-  <script src="./vendors/jquery.min.js"></script>
-  <script src="./vendors/av-min.js"></script>
-  <script src="./src/js/index.js"></script>
-
-  <script>
-    var APP_ID = 'qqAva2bHozlp1eKXljir2sJE-gzGzoHsz';
-    var APP_KEY = 'RS0emJcSA6D3yWrrReXv2exm';
-
-    AV.init({
-      appId: APP_ID,
-      appKey: APP_KEY
-    });
-
-    let $olSongs = $('ol#songs')
-
-    var query = new AV.Query('Song');
-    query.find().then(function(results){
-      $('.loading').remove()
-      for (let i = 0; i < results.length; i++) {
-        let song = results[i].attributes
-        let li = `
-                <li>
-                  <div class="song">
-                    <h3 class="song-name">${song.name}</h3>
-                    <p class="song-info">
-                      ${song.singer} - ${song.album}
-                    </p>  
-                  </div>
-                  <a class="play-btn" href="#">
-                    <svg class="icon" aria-hidden="true">
-                      <use xlink:href="#icon-play"></use>
-                    </svg>
-                  </a>
-                </li>
-        `
-        $olSongs.append(li)
-      }
-    },function(error){
-      alert('获取歌曲失败')
-    })
-
-    // var SongObject = AV.Object.extend('Song'); //选择表名
-    // var songOBject = new SongObject(); //生成一条数据
-    // songObject = new SongObject();
-    // songObject.set('name','1')
-    // var songObject2 = new SongObject();
-    // songObject2.set('name', '2')
-    // let songs = [songObject1, songObject2]
-    // AV.Object.saveAll(songs)
-
-
-
-    // songOBject.save({
-    //   name: '烟火里的尘埃', //数据里面的内容
-    //   singer: '华晨宇',
-    //   album: '烟火里的尘埃',
-    //   url: '//p7zhcxqif.bkt.clouddn.com/music.mp3'
-    // }).then(function (object) {
-    //   alert('保存成功');
-    // })
-    // songOBject.save({
-    //   name: '起风了（Cover 高橋優）', //数据里面的内容
-    //   singer: '买辣椒也用券',
-    //   album: '起风了（Cover 高橋優-《ヤキモチ》）',
-    //   url: '//p7zhcxqif.bkt.clouddn.com/1.mp3'
-    // }).then(function (object) {
-    //   alert('保存成功');
-    // })
-    // songOBject.save({
-    //   name: 'Better Than One', //数据里面的内容
-    //   singer: 'The Score',
-    //   album: 'The Score EP 2',
-    //   url: '//p7zhcxqif.bkt.clouddn.com/02.mp3'
-    // }).then(function (object) {
-    //   alert('保存成功');
-    // })
-  </script>
+  <script src="//at.alicdn.com/t/font_648610_wi8ib9o66j62yb9.js"></script>
+  <script src="vendors/jquery.min.js"></script>
+  <script src="src/js/index.js"></script>
 </body>
 </html>

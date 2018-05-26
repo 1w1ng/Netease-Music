@@ -1,0 +1,122 @@
+[
+  {
+    "id": 0,
+    "songName": "烟火里的尘埃",
+    "songAuthor": "华晨宇",
+    "album": "烟火里的尘埃",
+    "sq": true,
+    "url": "//p7zhcxqif.bkt.clouddn.com/music.mp3",
+    "hasLrc": true,
+    "lrcUrl": "",
+    "coverUrl": "//p1.music.126.net/_49Xz_x9kTTdEgmYYk6w2w==/6672936069046297.jpg?imageView&thumbnail=360y360&quality=75&tostatic=0",
+    "backgroundImgUrl": "//p3.music.126.net/LqmkE2QMNn7ZV8VJGcW2Qw==/1751522033049328.jpg"
+  },
+  {
+    "id": 1,
+    "songName": "起风了（Cover 高橋優）",
+    "songAuthor": "买辣椒也用券",
+    "album": "起风了（Cover 高橋優-《ヤキモチ》）",
+    "sq": false,
+    "url": "//p7zhcxqif.bkt.clouddn.com/1.mp3",
+    "hasLrc": true,
+    "lrcUrl": "",
+    "coverUrl": "//p1.music.126.net/c0nzSObvxF_DftayAJjXsw==/109951162864860506.jpg?imageView&thumbnail=360y360&quality=75&tostatic=0",
+    "backgroundImgUrl": "//p4.music.126.net/-WERIcnzCmczzHLC8JAtwQ==/17991308765547704.jpg"
+  },
+  {
+    "id": 2,
+    "songName": "Better Than One",
+    "songAuthor": "The Score",
+    "album": "The Score EP 2",
+    "sq": false,
+    "url": "//p7zhcxqif.bkt.clouddn.com/02.mp3",
+    "hasLrc": true,
+    "lrcUrl": "",
+    "coverUrl": "//p1.music.126.net/SXm1w6ueHB5inMd7QZxn7A==/7834020348605426.jpg?imageView&thumbnail=360y360&quality=75&tostatic=0",
+    "backgroundImgUrl": "//p3.music.126.net/4rAT4yDFgbnZV-AFJcW4FA==/17814287393252264.jpg"
+  },
+  {
+    "id": 3,
+    "songName": "Mad World (Original Mix)",
+    "songAuthor": "Hardwell / Jake Reese",
+    "album": "Mad World",
+    "sq": true,
+    "url": "//p7zhcxqif.bkt.clouddn.com/3.mp3",
+    "hasLrc": true,
+    "lrcUrl": "",
+    "coverUrl": "//p1.music.126.net/5R_SxYhU_GdAGNSBwqi-5w==/7962663211096187.jpg?imageView&thumbnail=360y360&quality=75&tostatic=0",
+    "backgroundImgUrl": "//p4.music.126.net/y50nbJ1tHDtYfUesfQmXVg==/16634511417081506.jpg"
+  },
+  {
+    "id": 4,
+    "songName": "Overflow",
+    "songAuthor": "SMLE/Helen Tess",
+    "album": "Overflow",
+    "sq": true,
+    "url": "//p7zhcxqif.bkt.clouddn.com/four.mp3",
+    "hasLrc": true,
+    "lrcUrl": "",
+    "coverUrl": "//p1.music.126.net/4qVisMlLQpaOnxMxNTSdsw==/18641120139076007.jpg?imageView&thumbnail=360y360&quality=75&tostatic=0",
+    "backgroundImgUrl": "//p4.music.126.net/V6EgNLFZUwW-6SmSMX6REw==/17659256254106945.jpg"
+  },
+  {
+    "id": 5,
+    "songName": "山阴路的夏天 (2016 unplugged)",
+    "songAuthor": "李志/张怡然",
+    "album": "李志北京不插电现场 2016.5.29",
+    "sq": true,
+    "url": "//p7zhcxqif.bkt.clouddn.com/five.mp3",
+    "hasLrc": true,
+    "lrcUrl": "",
+    "coverUrl": "//p1.music.126.net/RN-nvLgMuLujEvbMRUFQvA==/3420580718570196.jpg?imageView&thumbnail=360y360&quality=75&tostatic=0",
+    "backgroundImgUrl": "//p3.music.126.net/0TPckdXTcWx8aSQs58eddg==/109951163295142971.jpg"
+  },
+  {
+    "id": 6,
+    "songName": "Intro",
+    "songAuthor": "The xx",
+    "album": "xx",
+    "sq": true,
+    "url": "//p7zhcxqif.bkt.clouddn.com/6.mp3",
+    "hasLrc": false,
+    "lrcUrl": "",
+    "coverUrl": "//p1.music.126.net/Xik6a3wXoGPOLI1GNXGdFQ==/825733232504415.jpg?imageView&thumbnail=360y360&quality=75&tostatic=0",
+    "backgroundImgUrl": "//p4.music.126.net/H0pqdMSAE23DPrS4aKyhuQ==/18215609137578121.jpg"
+  },
+  {
+    "id": 7,
+    "songName": "Good Vibes",
+    "songAuthor": "PLS&TY/Cosmos & Creature",
+    "album": "Good Vibes",
+    "sq": false,
+    "url": "//p7zhcxqif.bkt.clouddn.com/7.mp3",
+    "hasLrc": true,
+    "lrcUrl": "",
+    "coverUrl": "//p1.music.126.net/xnzXCF4ltaFZ-rGAiCuhTQ==/18802748348380680.jpg?imageView&thumbnail=360y360&quality=75&tostatic=0",
+    "backgroundImgUrl": "//p4.music.126.net/seW5KkUhGMY7uOmfqUyrFA==/18224405230902418.jpg"
+  },
+  {
+    "id": 8,
+    "songName": "All Of Me/Say Something",
+    "songAuthor": "Shaun Reynolds/Lily Me",
+    "album": "All Of Me/Say Something",
+    "sq": false,
+    "url": "//p7zhcxqif.bkt.clouddn.com/8.mp3",
+    "hasLrc": true,
+    "lrcUrl": "",
+    "coverUrl": "//p1.music.126.net/RL1y8v-bc2HA34toySJcSg==/3298534886368918.jpg?imageView&thumbnail=360y360&quality=75&tostatic=0",
+    "backgroundImgUrl": "//p4.music.126.net/s1afkZLAgsu_PoQ7AhcKIQ==/18366242230549081.jpg"
+  },
+  {
+    "id": 9,
+    "songName": "The Nights (Original Mix)",
+    "songAuthor": "Avicii",
+    "album": "The Days / Nights (EP)",
+    "sq": false,
+    "url": "//p7zhcxqif.bkt.clouddn.com/9.mp3",
+    "hasLrc": true,
+    "lrcUrl": "",
+    "coverUrl": "//p1.music.126.net/6FE-03uc2xJJWcE-aKIejw==/3246857838267604.jpg?imageView&thumbnail=360y360&quality=75&tostatic=0",
+    "backgroundImgUrl": "//p3.music.126.net/S-OZz2Z_nCI4chd5n0k9OA==/17806590811901304.jpg"
+  }
+]

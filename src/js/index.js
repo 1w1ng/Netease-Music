@@ -1,6 +1,6 @@
 $(function () {
   //生成推荐歌单
-  $.get('//owf5g9dnv.bkt.clouddn.com/recommendList.json').then(function (response) {
+  $.get('src/recommendList.json').then(function (response) {
     let recommendList = response
     let $recommendList = $('.recommend-playlists')
     let $ul = $('<ul></ul>')
@@ -28,44 +28,44 @@ $(function () {
   })
 
   //生成最新音乐
-  // $.get('./songs.json', function (response) {
-  //   let songDB = response
-  //   let $latestMusic = $('.latest-music')
-  //   let $musicList = $('<ol></ol>')
-  //   songDB.forEach((ele) => {
-  //     let $li = $(`
-  //       <li>
-  //         <div class="song">
-  //           <h3 class="song-name">${ele.songName}</h3>
-  //           <p class="song-info">  
-  //             ${ele.songAuthor} - ${ele.album}
-  //           </p>
-  //         </div>
-  //         <a class="play-btn" href="#">
-  //           <svg class="icon" aria-hidden="true">
-  //             <use xlink:href="#icon-play"></use>
-  //           </svg>
-  //         </a>
-  //       </li>
-  //     `)
+  $.get('./songs.json', function (response) {
+    let songDB = response
+    let $latestMusic = $('.latest-music')
+    let $musicList = $('<ol></ol>')
+    songDB.forEach((ele) => {
+      let $li = $(`
+        <li>
+          <div class="song">
+            <h3 class="song-name">${ele.songName}</h3>
+            <p class="song-info">  
+              ${ele.songAuthor} - ${ele.album}
+            </p>
+          </div>
+          <a class="play-btn" href="#">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-play"></use>
+            </svg>
+          </a>
+        </li>
+      `)
 
-  //     //添加超清标记
-  //     if (ele.sq === true) {
-  //       $li.find('.song-info').prepend($(`
-  //         <svg class="icon sq" aria-hidden="true">
-  //           <use xlink:href="#icon-sq"></use>
-  //         </svg>
-  //       `))
-  //     }
+      //添加超清标记
+      if (ele.sq === true) {
+        $li.find('.song-info').prepend($(`
+          <svg class="icon sq" aria-hidden="true">
+            <use xlink:href="#icon-sq"></use>
+          </svg>
+        `))
+      }
 
-  //     $musicList.append($li)
-  //   })
-  //   $latestMusic.append($musicList).find('.loading').remove()
-  //   $musicList.on('click', 'li', function () {
-  //     let index = $(this).index()
-  //     window.location.href = `./song.html?id=${index}`
-  //   })
-  // })
+      $musicList.append($li)
+    })
+    $latestMusic.append($musicList).find('.loading').remove()
+    $musicList.on('click', 'li', function () {
+      let index = $(this).index()
+      window.location.href = `./song.html?id=${index}`
+    })
+  })
 
   //tab切换
   $('.index-nav').on('click', '.tab-header>li', function (e) {

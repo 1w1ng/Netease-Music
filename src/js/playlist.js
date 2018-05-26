@@ -1,10 +1,10 @@
+// 歌单页播放
 $(function () {
   let search = window.location.search
   let rId = Number(search.match(/\?rid=(\d+)/)[1])
 
-  $.get(`//owf5g9dnv.bkt.clouddn.com/playlists/list${rId + 1}.json`).then(function (response) {
+  $.get(`src/playlists/list${rId+1}.json`).then(function (response) {
     let listInfo = response
-
     $('.playlist-header .background-img').css('background-image', `url(${listInfo.rCoverUrl})`)
     $('.playlist-header .cover').css('background-image', `url(${listInfo.rCoverUrl})`)
     let $viewTimes = $('.playlist-header .views')
@@ -35,7 +35,7 @@ $(function () {
         ${$labelList[0].outerHTML}
       </div>
       <p class="brief-info active">
-          简介：${listInfo.rBriefInfo.replace(/\\n/g, ' <br> ')}
+          简介：${listInfo.rBriefInfo.replace(/\n/g, ' <br/> ')}
       </p>
       <svg class="icon down" aria-hidden="true">
           <use xlink:href="#icon-down"></use>
@@ -51,7 +51,7 @@ $(function () {
     })
   })
 
-  $.get('//owf5g9dnv.bkt.clouddn.com/hotlist.json').then(function (response) {
+  $.get('//p7zhcxqif.bkt.clouddn.com/hotlist.json').then(function (response) {
     let songDB = response
     let $musicList = $('<ol></ol>')
     let $playlist = $('.playlist')
@@ -89,7 +89,7 @@ $(function () {
     $playlist.append($musicList).find('.loading').remove()
     $musicList.on('click', 'li', function () {
       let index = $(this).index()
-      window.location.href = `./play.html?id=${index}`
+      window.location.href = `./song.html?id=${index}`
     })
   })
 
