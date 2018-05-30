@@ -1,6 +1,6 @@
 $(function () {
   //生成推荐歌单
-  $.get('src/recommendList.json').then(function (response) {
+  $.get('//p7zhcxqif.bkt.clouddn.com/recommendList.json').then(function (response) {
     let recommendList = response
     let $recommendList = $('.recommend-playlists')
     let $ul = $('<ul></ul>')
@@ -28,7 +28,7 @@ $(function () {
   })
 
   //生成最新音乐
-  $.get('./songs.json', function (response) {
+  $.get('//p7zhcxqif.bkt.clouddn.com/songs.json', function (response) {
     let songDB = response
     let $latestMusic = $('.latest-music')
     let $musicList = $('<ol></ol>')
@@ -88,7 +88,7 @@ $(function () {
 
     //index= 1热歌榜
     if (index === 1) {
-      $.get('//owf5g9dnv.bkt.clouddn.com/hotlist.json').then(function (response) {
+      $.get('//p7zhcxqif.bkt.clouddn.com/hotlist.json').then(function (response) {
         let songDB = response
         let $musicList = $('<ol></ol>')
         let $hotListTab = $('.hot-list-tab')
@@ -126,7 +126,7 @@ $(function () {
 
         $musicList.on('click', 'li', function () {
           let index = $(this).index()
-          window.location.href = `./play.html?id=${index}`
+          window.location.href = `./song.html?id=${index}`
         })
 
         //标记已加载
@@ -339,7 +339,7 @@ $(function () {
             DB.map(function (el) {
               if (el.id === ele) {
                 let $li = $(`
-                <li class="item"><a href="./play.html?id=${el.id}">${el.songName}</a></li>               
+                <li class="item"><a href="./song.html?id=${el.id}">${el.songName}</a></li>               
                 `)
                 $ul.append($li)
               }
