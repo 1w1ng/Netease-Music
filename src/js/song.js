@@ -43,7 +43,6 @@ $(function () {
 
     //播放，暂停键
     $playBtn.click(function (e) {
-      i = 1
       e.stopPropagation()
       audio.play()
       $disc.removeClass('paused').addClass('playing')
