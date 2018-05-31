@@ -3,7 +3,7 @@ $(function () {
   let search = window.location.search
   let rId = Number(search.match(/\?rid=(\d+)/)[1])
 
-  $.get(`src/playlists/list${rId+1}.json`).then(function (response) {
+  $.get(`./src/playlists/list${rId+1}.json`).then(function (response) {
     let listInfo = response
     $('.playlist-header .background-img').css('background-image', `url(${listInfo.rCoverUrl})`)
     $('.playlist-header .cover').css('background-image', `url(${listInfo.rCoverUrl})`)
@@ -51,7 +51,7 @@ $(function () {
     })
   })
 
-  $.get('//p7zhcxqif.bkt.clouddn.com/hotlist.json').then(function (response) {
+  $.get('./src/hotlist.json').then(function (response) {
     let songDB = response
     let $musicList = $('<ol></ol>')
     let $playlist = $('.playlist')

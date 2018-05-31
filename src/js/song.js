@@ -167,7 +167,7 @@ $(function () {
       })
     }
   }
-  $.get('../songs.json').then(function (response) {
+  $.get('./src/songs.json').then(function (response) {
     let song = response[id]
     let { coverUrl, backgroundImgUrl, url, songName, songAuthor, hasLrc } = song
 

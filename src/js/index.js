@@ -28,7 +28,7 @@ $(function () {
   })
 
   //生成最新音乐
-  $.get('../songs.json', function (response) {
+  $.get('./src/songs.json', function (response) {
     let songDB = response
     let $latestMusic = $('.latest-music')
     let $musicList = $('<ol></ol>')
