@@ -79,6 +79,10 @@ section>h2.title {
   width: calc(33.333333% - 2px);
   margin-bottom: 0.75rem;
   position: relative;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select:none;
 }
 
 .recommend-playlists>ul>li>img {
@@ -123,6 +127,10 @@ section>h2.title {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   position: relative;
   display: flex;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select:none;
 }
 .music-list>ol>li>.song{
   width:90%
@@ -186,7 +194,7 @@ section>h2.title {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url('//s3.music.126.net/m/s/img/recommand_bg_3x.png?f3a9aaa781c3bf3b543d129327d35fce') no-repeat center/cover;
+  background: url('http://s3.music.126.net/m/s/img/recommand_bg_3x.png?f3a9aaa781c3bf3b543d129327d35fce') no-repeat center/cover;
 }
 .index-footer .logo{
   margin-top: 3.4rem;
@@ -212,7 +220,7 @@ section>h2.title {
   flex-direction: column;
   justify-content: center;
   height: 7.3rem;
-  background: url('//s3.music.126.net/m/s/img/hot_music_bg_2x.jpg?f01a252389c26bcf016816242eaa6aee') no-repeat center center/contain;
+  background: url('http://s3.music.126.net/m/s/img/hot_music_bg_2x.jpg?f01a252389c26bcf016816242eaa6aee') no-repeat center center/contain;
   position: relative;
   padding-left: 1rem;
 }
@@ -228,7 +236,7 @@ section>h2.title {
 .hot-top .hot-icon{
   height: 3.35rem;
   width: 7.1rem;
-  background-image: url('//s3.music.126.net/m/s/img/index_icon_2x.png?5207a28c3767992ca4bb6d4887c74880');
+  background-image: url('http://s3.music.126.net/m/s/img/index_icon_2x.png?5207a28c3767992ca4bb6d4887c74880');
   background-size:8.3rem 4.85rem;
   background-position: -1.2rem -1.5rem;
   position: relative;
